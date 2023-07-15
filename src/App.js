@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./Pages/Home";
 import { Show } from "./Pages/Show";
@@ -13,28 +13,6 @@ function App() {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
-  const [isMetaMaskConnected, setIsMetaMaskConnected] = useState(false);
-  const [metaMaskAddress, setMetaMaskAddress] = useState("");
-
-  const handleConnectMetaMask = () => {
-    if (window.ethereum) {
-      // Request MetaMask accounts
-      window.ethereum
-        .request({ method: "eth_requestAccounts" })
-        .then((accounts) => {
-          const address = accounts[0];
-          setIsMetaMaskConnected(true);
-          setMetaMaskAddress(address);
-          console.log("MetaMask connected:", address);
-        })
-        .catch((error) => {
-          console.log("Error connecting MetaMask:", error);
-        });
-    } else {
-      console.log("MetaMask extension not detected");
-    }
-  };
-
   if (!componentMounted) {
     return <div />;
   }
@@ -46,7 +24,6 @@ function App() {
           <GlobalStyles />
           <div className="toggle-margin">
             <Toggle className="toggle" theme={theme} toggleTheme={toggleTheme} />
-            <button onClick={handleConnectMetaMask}>Connect to MetaMask</button>
           </div>
           <BrowserRouter>
             <Routes>
