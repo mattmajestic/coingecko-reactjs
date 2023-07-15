@@ -13,6 +13,24 @@ function App() {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
+  const handleConnectMetaMask = () => {
+    if (window.ethereum) {
+      // Request MetaMask accounts
+      window.ethereum.request({ method: 'eth_requestAccounts' })
+        .then((accounts) => {
+          const address = accounts[0];
+          setIsMetaMaskConnected(true);
+          setMetaMaskAddress(address);
+          console.log('MetaMask connected:', address);
+        })
+        .catch((error) => {
+          console.log('Error connecting MetaMask:', error);
+        });
+    } else {
+      console.log('MetaMask extension not detected');
+    }
+  };
+
   if (!componentMounted) {
     return <div />;
   }
