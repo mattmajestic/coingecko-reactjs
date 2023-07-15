@@ -13,6 +13,9 @@ function App() {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
+  const [isMetaMaskConnected, setIsMetaMaskConnected] = useState(false);
+  const [metaMaskAddress, setMetaMaskAddress] = useState('');
+
   const handleConnectMetaMask = () => {
     if (window.ethereum) {
       // Request MetaMask accounts
