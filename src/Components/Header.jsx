@@ -30,7 +30,9 @@ export const Header = ({ back }) => {
             </Link>
           </li>
           <li>
-            <button className="button">Connect to Metamask</button>
+          <button className="button" onClick={handleConnectMetaMask}>
+              Connect to MetaMask
+            </button>
           </li>
         </ul>
       </div>
