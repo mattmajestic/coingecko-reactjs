@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c6cc6120.css",
+    "main.js": "/static/js/main.e639835a.js",
+    "static/js/787.53107c12.chunk.js": "/static/js/787.53107c12.chunk.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/bitcoin.webp": "/static/media/bitcoin.a623fea0ed70d1aa569b.webp",
+    "static/media/sun.svg": "/static/media/sun.339f5fcbe5d19f4a9af41251b03b2283.svg",
+    "static/media/moon.svg": "/static/media/moon.f43c67a800e2c0181aa454dee2444f98.svg",
+    "index.html": "/index.html",
+    "main.c6cc6120.css.map": "/static/css/main.c6cc6120.css.map",
+    "main.e639835a.js.map": "/static/js/main.e639835a.js.map",
+    "787.53107c12.chunk.js.map": "/static/js/787.53107c12.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6cc6120.css",
+    "static/js/main.e639835a.js"
+  ]
+}
