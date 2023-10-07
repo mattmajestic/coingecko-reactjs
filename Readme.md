@@ -1,5 +1,16 @@
-# ReactJS Crypto App powered by CoinGecko API
+# CoinGecko + ReactJS App in 1 Minute 🦎
 
-This is a Crypto price tracking app that was built using [Coingecko Api](https://www.coingecko.com/en/api) and is a PWA web app. It show latest price all the cryptocurrencies. 🔥 🔥
+Learn to build a CoinGecko-powered ⚛️ ReactJS app in just 1 minute! 🦎
 
-Check out the website: https://coingecko-reactjs.vercel.app/
+## Highlights
+
+- Fetch cryptocurrency data from CoinGecko.
+- Display real-time data.
+
+## Subscribe and Stay Tuned! 🎉
+
+Join the [MajesticCoding YouTube Channel](https://www.youtube.com/@majesticcoding/) for more tech tutorials and quick hacks!
+
+[![Subscribe to MajesticCoding](https://img.shields.io/badge/Subscribe-MajesticCoding-red)](https://www.youtube.com/@majesticcoding/)
+
+Like, share, and subscribe to support the channel and stay updated with more exciting content. Enjoy your coding adventures! 🚀
